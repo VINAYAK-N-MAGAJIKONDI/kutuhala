@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import "https://fonts.googleapis.com/css?family=Montserrat";
 * {
   font-family: Montserrat;
 }
@@ -7,7 +7,7 @@ html {
   color: rgb(0, 0, 0);
   font-size: 1em;
   line-height: 1.5;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
@@ -19,47 +19,41 @@ a {
   text-decoration: none;
 }
 
-
-.logo{
-
-  align-self:center;
+.logoimage {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-
-
-header{
-
-position: absolute;
-
+.logo {
+  align-self: center;
 }
-
-
-
 
 /* - link under - */
 
 .link-arrow:after {
-  content: '';
+  content: "";
   background-size: 100% 100%;
   width: 16px;
   height: 12px;
   position: absolute;
   top: 5px;
   right: -28px;
-  -webkit-transition: all .4s cubic-bezier(.35, 1, .33, 1);
-  transition: all .4s cubic-bezier(.35, 1, .33, 1)
+  -webkit-transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+  transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
 }
 
 .link-arrow:hover:after {
-  right: -35px
+  right: -35px;
 }
 
 .link-arrow.link-arrow-white:after {
-  background-size: 100% 100%
+  background-size: 100% 100%;
 }
 
 .link-arrow-hover:after {
-  right: -35px
+  right: -35px;
 }
 
 .link {
@@ -69,50 +63,49 @@ position: absolute;
   padding-bottom: 4px;
   text-transform: uppercase;
   font-family: Montserrat, helvetica, arial, sans-serif;
-  font-weight: 700
+  font-weight: 700;
 }
 
 .link:active,
 .link:focus,
 .link:hover {
-  outline: 0
+  outline: 0;
 }
 
 .link:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   background: #000;
   width: 0;
   height: 2px;
-  -webkit-transition: all .4s cubic-bezier(.35, 1, .33, 1);
-  transition: all .4s cubic-bezier(.35, 1, .33, 1)
+  -webkit-transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+  transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
 }
 
 .link:hover {
-  color: #000
+  color: #000;
 }
 
 .link:hover:before {
-  width: 100%
+  width: 100%;
 }
 
 .link-theme:before {
-  background: #ffd300
+  background: #ffd300;
 }
 
-@media only screen and (min-width:250px) {
+@media only screen and (min-width: 250px) {
   .main {
     padding-top: 150px;
   }
 }
-    
+
 .header ul {
   margin: 0;
   padding: 0 0 0px 10px;
   position: relative;
-
 
   list-style: none;
   overflow: hidden;
@@ -132,6 +125,7 @@ position: absolute;
 
 .header .logo {
   color: #ffd300;
+  font-weight: 900;
   display: block;
   float: left;
   font-size: 30px;
@@ -145,13 +139,9 @@ position: absolute;
   background-color: rgb(255, 106, 0);
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
+  transition: max-height 0.2s ease-out;
   z-index: 5;
 }
-
-
-
-
 
 /* menu icon */
 
@@ -169,18 +159,18 @@ position: absolute;
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: background 0.2s ease-out;
   width: 18px;
 }
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
   background: #333;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   position: absolute;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   width: 100%;
 }
 
@@ -221,7 +211,6 @@ position: absolute;
 
 /* section */
 
-
 @media (min-width: 875px) {
   .header li {
     float: left;
@@ -252,7 +241,6 @@ position: absolute;
 
 @media (max-width: 875px) {
   .header {
-
     padding: 20px 0% 20px 0%;
   }
 }

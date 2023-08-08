@@ -199,6 +199,16 @@ return (
   </div>
 </div>
     </div>
+
+
+
+    <hr/>
+    <h4 style={{color: 'white',
+    fontSize: '16px',
+    fontFamily: 'Arial, sans-serif',
+    textAlign: 'center',}}>
+      Copyright Ⓒ 2023 UVCE kutuhala. All Rights Reserved.
+    </h4>
  </footer>
  
  

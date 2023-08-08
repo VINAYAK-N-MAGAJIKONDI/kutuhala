@@ -1,0 +1,86 @@
+/* Header Styles */
+.app-header {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Main Styles */
+.app-main {
+  padding: 20px;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  gap: 20px;
+
+  gap: 2rem;
+  text-align: center;
+}
+
+.event-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.event-item:hover {
+  transform: translateY(-5px);
+}
+
+.event-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.event-info {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.event-info h2 {
+  margin-top: 0;
+}
+
+.event-info p {
+  margin-bottom: 5px;
+}
+
+/* Footer Styles */
+.app-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .event-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .event-item img {
+    height: 150px;
+  }
+}
+
+.background-gallery {
+  background: /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      /* black with 70% opacity */ rgba(0, 0, 0, 0.7)
+        /* black with 70% opacity */
+    ),
+    /* bottom, image */
+      url("https://th.bing.com/th/id/OIP.uZXesfvzdyWymd1NmQRJxAHaEK?pid=ImgDet&rs=1"); /* an image of a starry night sky */
+}

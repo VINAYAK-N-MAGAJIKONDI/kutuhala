@@ -5,6 +5,7 @@ import nitin from "../../assets/images/nitin.png"
 import saadhvi from "../../assets/images/saadhvi.png"
 import sujay from "../../assets/images/sujay.png"
 import sujayb from "../../assets/images/sujayb.png"
+import vinayak from "../../assets/images/vinayak.png"
 
 
 function aboutus() {
@@ -33,6 +34,17 @@ function aboutus() {
 			<div class="box">
 			<img src={sujay}/>
 				<h3>SUJAY V</h3>
+				<h5>Core Team</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+			<img src={vinayak}/>
+				<h3>VINAYAK N M</h3>
 				<h5>Core Team</h5>
 				<div class="icons">
 					<a href="#"><i class="ri-twitter-fill"></i></a>
