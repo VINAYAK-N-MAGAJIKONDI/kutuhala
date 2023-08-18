@@ -11,9 +11,9 @@ export default function Header() {
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
         <li><Link to="/" class="link link-theme link-arrow">HOME</Link></li>
-        <li><Link to="/Aboutus" class="link link-theme link-arrow">TEAM</Link></li>
-        <li><Link to="/Gallery" class="link link-theme link-arrow" >ABOUT US</Link></li>
-        <li><Link to="/Aboutus" class="link link-theme link-arrow">CONTACT</Link></li>
+        <li><Link to="/Team" class="link link-theme link-arrow">TEAM</Link></li>
+        <li><Link to="/Gallery" class="link link-theme link-arrow" >GALLERY</Link></li>
+        <li><Link to="/Games" class="link link-theme link-arrow">GAMES</Link></li>
       </ul>
     </header>
     <script>

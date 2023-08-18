@@ -3,14 +3,12 @@
   font-family: Montserrat;
 }
 
-html {
+.{
   color: rgb(0, 0, 0);
   font-size: 1em;
   line-height: 1.5;
   box-sizing: border-box;
-}
 
-body {
   margin: 0;
 }
 
@@ -22,12 +20,16 @@ a {
 .logoimage {
   height: 50px;
   width: 50px;
+  position: relative;
   display: inline-block;
   vertical-align: middle;
 }
 
 .logo {
-  align-self: center;
+  /* align-self: center; */
+  
+  position: absolute;
+  max-height: 100px;
 }
 
 /* - link under - */

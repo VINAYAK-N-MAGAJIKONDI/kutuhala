@@ -1,0 +1,288 @@
+.base{
+    position: relative;
+
+	height: 100%;
+
+  background-color: #000000;
+	display: grid;
+	align-items: center;
+    justify-items: center;
+    overflow-x: overlay;
+    justify-content: center;
+}
+
+
+
+h1{
+	
+	color: rgb(255, 255, 255);
+}
+.quizz{
+	
+	position:relative;
+	max-height: 300px;
+	max-width: 300px;
+}
+
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    min-width: 320px;
+    max-width: 700px;
+    width: 60vw;
+    text-align: center;
+  }
+  
+  .glass-card img {
+    max-width: 100%;
+    border-radius: 10px;
+
+  }
+  
+  .glass-card h2 {
+    margin-top: 10px;
+    color: rgb(206, 206, 206);
+  }
+  
+  .glass-card .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .glass-card .button:hover {
+    background-color: #2980b9;
+  }
+
+/* Set a base font size for the entire document */
+html {
+  font-size: 16px; /* Adjust this to your preference */
+}
+
+/* Define responsive H1 font size using 'rem' units */
+h1 {
+  font-size: 2.5rem; /* Adjust this to your preference */
+}
+
+/* Media queries for different screen sizes */
+
+/* Small phones */
+@media (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Larger phones and small tablets */
+@media (min-width: 321px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/* Tablets and smaller laptops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Standard laptops and desktops */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  /* No need to adjust font-size here; keeping the base size */
+}
+
+/* Large desktops and beyond */
+@media (min-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.intro {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-out;
+}
+
+.intro div{
+  max-width: 50vw;
+}
+.intro video{
+  max-width: 40vw;
+  padding:10px
+}
+
+@media (min-width: 751) and (max-width: 1000) {
+  
+  .larger{
+    font-size: 2rem;
+  }
+  
+  
+  
+  }
+
+@media  (max-width: 750px) {
+.intro {
+  padding: 0px;
+  display: grid;
+  justify-items: center;
+  width: 95%;
+
+}
+.intro video{
+  max-width: 80vw;
+  padding:10px
+}
+.intro h2{
+  font-size: larger;
+}
+
+.intro div{
+  min-width:80vw;
+  max-width: 95vw;
+}
+
+
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+.howtojoin {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #3498db00;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-out;
+}
+
+.howtojoin div{
+  max-width: 50vw;
+  padding: 0 30px  0;
+}
+
+.howtojoin div:first-child {
+  animation: fadeInLeft 1s ease-out;
+}
+
+.howtojoin div:nth-child(2) {
+  animation: fadeInRight 1s ease-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+.howtojoin img{
+  max-width: 40vw;
+  padding:10px
+}
+.howtojoin h2{
+  font-size: 2.5rem;
+}
+
+@media  (max-width: 750px) {
+.howtojoin {
+  padding: 0px;
+  display: grid;
+  justify-items: center;
+  width: 95%;
+
+}
+.howtojoin img{
+  max-width: 80vw;
+  padding:10px
+}
+.howtojoin h2{
+  font-size: larger;
+}
+
+.howtojoin div{
+  min-width:80vw;
+  max-width: 95vw;
+  padding: 0 30px 0 30px;
+}
+
+
+}
+

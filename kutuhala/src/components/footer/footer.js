@@ -17,10 +17,10 @@ return (
      <div class="footer-col">
          <h4>kutuhala</h4>
          <ul>
-           <li><a href="#">Home</a></li>
-           <li><a href="#">Team</a></li>
-           <li><a href="#">Upcoming events</a></li>
-           <li><a href="#">Gallery</a></li>
+           <li><a href="/">Home</a></li>
+           <li><a href="/Team">Team</a></li>
+           <li><a href="/Events">Upcoming events</a></li>
+           <li><a href="Gallery">Gallery</a></li>
          </ul>
        </div>
        {/* <div class="footer-col">
@@ -202,7 +202,7 @@ return (
 
 
 
-    <hr/>
+    <hr color='white'/>
     <h4 style={{color: 'white',
     fontSize: '16px',
     fontFamily: 'Arial, sans-serif',

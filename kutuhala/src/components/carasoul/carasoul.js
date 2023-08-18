@@ -1,42 +1,92 @@
-// import React, { useState } from "react";
-// import { TiChevronLeftOutline, TiChevronRightOutline } from 'react-icons/ti';
-// import styles from './carasoul.css'; // Import the styles using CSS modules
+import React from "react";
+import venturefortreasure from "../../pages/gallery/images/venturefortreasure.png"
+import QBEE from "../../pages/gallery/images/QBEE.jpeg";
+import ykpr from "../../pages/gallery/images/ykpr.png"
+import OIG from "../../pages/Home/OIG.jpg";
+import './carasoul.css'
 
-// const MAX_VISIBILITY = 3;
+function Carousal() {
+  return (
+    <>
+      <section
+        class="carousal"
+        style={{ position: "relative", maxWidth: "100vw" }}
+      >
+        <h1 style={{ textAlign: "center" }}> Recent Events </h1>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                style={{ aspectRatio: "16/9" }}
+                class="d-block w-100"
+                src={QBEE}
+                alt="First slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Quizzy Bee Challenge</h5>
+                <p>Date</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                style={{ aspectRatio: "16/9" }}
+                class="d-block w-100"
+                src={ykpr}
+                alt="Second slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Yakshaprashne</h5>
+                <p>Date</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                style={{ aspectRatio: "16/9" }}
+                class="d-block w-100"
+                src={venturefortreasure}
+                alt="Third slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>VENTURE FOR TREASURE</h5>
+                <p>Date</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+    </>
+  );
+}
 
-// const Card = ({ title, content }) => (
-//   <div className={styles.card}>
-//     <h2>{title}</h2>
-//     <p>{content}</p>
-//   </div>
-// );
-
-// const Carousel = ({ children }) => {
-//   const [active, setActive] = useState(2);
-//   const count = React.Children.count(children);
-
-//   return (
-//     <div className={styles.carousel}>
-//       {active > 0 && <button className={`${styles.nav} ${styles.left}`} onClick={() => setActive(i => i - 1)}><TiChevronLeftOutline/></button>}
-//       {React.Children.map(children, (child, i) => (
-//         <div
-//           className={styles['card-container']}
-//           style={{
-//             '--active': i === active ? 1 : 0,
-//             '--offset': (active - i) / 3,
-//             '--direction': Math.sign(active - i),
-//             '--abs-offset': Math.abs(active - i) / 3,
-//             'pointer-events': active === i ? 'auto' : 'none',
-//             'opacity': Math.abs(active - i) >= MAX_VISIBILITY ? '0' : '1',
-//             'display': Math.abs(active - i) > MAX_VISIBILITY ? 'none' : 'block',
-//           }}
-//         >
-//           {child}
-//         </div>
-//       ))}
-//       {active < count - 1 && <button className={`${styles.nav} ${styles.right}`} onClick={() => setActive(i => i + 1)}><TiChevronRightOutline/></button>}
-//     </div>
-//   );
-// };
-
-// export default Carousel;
+export default Carousal;

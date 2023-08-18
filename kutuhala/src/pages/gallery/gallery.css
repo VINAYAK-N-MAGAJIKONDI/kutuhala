@@ -38,7 +38,7 @@
 
 .event-item img {
   width: 100%;
-  height: 200px;
+  height: 200px;;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -76,11 +76,18 @@
 }
 
 .background-gallery {
-  background: /* top, transparent black, faked with gradient */ linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      /* black with 70% opacity */ rgba(0, 0, 0, 0.7)
-        /* black with 70% opacity */
-    ),
-    /* bottom, image */
-      url("https://th.bing.com/th/id/OIP.uZXesfvzdyWymd1NmQRJxAHaEK?pid=ImgDet&rs=1"); /* an image of a starry night sky */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://th.bing.com/th/id/OIP.uZXesfvzdyWymd1NmQRJxAHaEK?pid=ImgDet&rs=1"); /* an image of a starry night sky */
+
+  /* Make the background image cover the entire container */
+  background-size: cover;
+
+  /* Center the background image both horizontally and vertically */
+  background-position: center center;
+
+  /* Set the background to fixed so it doesn't scroll with content */
+  background-attachment: fixed;
+
+  /* Add other necessary styles for your container */
+  width: 100%;
 }

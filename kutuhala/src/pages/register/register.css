@@ -1,0 +1,30 @@
+.form-container {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 750px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+  .form-iframe {
+    width: 100%;
+    height: 80vh;
+    
+    border: none;
+  }
+  .body{
+    background-color: black;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
