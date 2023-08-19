@@ -16,7 +16,7 @@ return (
      <div class="row">
      <div class="footer-col">
          <h4>kutuhala</h4>
-         <ul>
+         <ul style={{ paddingLeft:"0px" }}>
            <li><a href="/">Home</a></li>
            <li><a href="/Team">Team</a></li>
            <li><a href="/Events">Upcoming events</a></li>

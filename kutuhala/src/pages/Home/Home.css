@@ -261,7 +261,7 @@ h1 {
   font-size: 2.5rem;
 }
 
-@media  (max-width: 750px) {
+@media  (max-width: 800px) {
 .howtojoin {
   padding: 0px;
   display: grid;

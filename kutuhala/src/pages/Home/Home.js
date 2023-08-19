@@ -1,10 +1,9 @@
 import React from "react";
 import Carousal from "../../components/carasoul/carasoul";
 import "./Home.css";
-import home from "./Home.png"
 import ebanner from "../../pages/upcomingevent/banner/ebanner.jpeg";
-import design from "./design.mp4"
-import image from "./design.png"
+import design from "./resources/design.mp4"
+import image from "./resources/design.png"
 
 function Home() {
   return (
@@ -36,18 +35,18 @@ function Home() {
         </div>
         <div class="howtojoin">
           {" "}
-          <div><img src={image} /><h1>
-              HOW TO BE A PART<br /> OF THE TEAM ?
-            </h1>
+          <div><img src={image} />
            
            </div>
           <div>
-          
-            <h2 >Quizzing Spirit<br />
-            <br /><hr color='white'/><br />
+          <h1>
+              HOW TO BE A PART OF THE TEAM ?
+            </h1>
+            <h2 >Quizzing Spirit
+            <br /><hr color='white'/>
             
               Head the warning : those who use Google to find solutions shall suffer in the depths of hell. 
-              <br /><br /><hr color='white'/><br />
+              <br /><hr color='white'/>
               Answer the frequently asked questions <br/>
             </h2>
           </div>

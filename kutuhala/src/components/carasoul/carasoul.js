@@ -2,7 +2,6 @@ import React from "react";
 import venturefortreasure from "../../pages/gallery/images/venturefortreasure.png"
 import QBEE from "../../pages/gallery/images/QBEE.jpeg";
 import ykpr from "../../pages/gallery/images/ykpr.png"
-import OIG from "../../pages/Home/OIG.jpg";
 import './carasoul.css'
 
 function Carousal() {
